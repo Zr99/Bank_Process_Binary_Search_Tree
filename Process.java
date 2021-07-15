@@ -1,14 +1,9 @@
-package Assignment3;
-
 import java.io.BufferedReader;
 import java.io.FileReader;
 
-//Name: Ryan Ling
-//ID: 1350127
-public class XProcess {
+public class Process {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		//check if there is an file
 		if(args.length !=1) {
@@ -54,9 +49,7 @@ public class XProcess {
 		//Method that set the balance
 		public double setBalance() {
 			return _balance;
-		}
-		
-		
+		}	
 	}
 	
 	//Class for Bank Binary Search Tree
@@ -66,8 +59,7 @@ public class XProcess {
 		BankBST left, right;
 		
 		//public constructor for BankBST
-		public BankBST() {
-			
+		public BankBST() {		
 		}
 		
 		//Insert method as BST
@@ -99,22 +91,6 @@ public class XProcess {
 				return left.find(key);
 			}
 			return right.find(key);
-		}
-		
-//		public boolean has(int key) {
-//			Account curr = root;
-//			while(curr != null && curr._key != key) {
-//				curr = (key <curr._key)?left:right;
-//			}
-//			
-//			if(curr == null) {
-//				return false;
-//			}
-//			return true;
-//		}
-		
-		public void remove(int k) {
-			
 		}
 		
 		//traverse the order and print out the root key
